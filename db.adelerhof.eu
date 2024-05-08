@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     okd4-services.adelerhof.eu. admin.home.lab. (
+@       IN      SOA     okd4-services.adelerhof.eu. admin.adelerhof.eu. (
                   1     ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -32,7 +32,7 @@ console-openshift-console.apps.openshift.adelerhof.eu.     IN     A     192.168.
 oauth-openshift.apps.openshift.adelerhof.eu.     IN     A     192.168.2.125
 
 ; OpenShift internal cluster IPs - SRV records
-_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-0.lab
-_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-1.lab
-_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-2.lab
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-0.adelerhof.eu
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-1.adelerhof.eu
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-2.adelerhof.eu
 
