@@ -1,0 +1,38 @@
+$TTL    604800
+@       IN      SOA     okd4-services.adelerhof.eu. admin.home.lab. (
+                  1     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
+)
+
+; name servers - NS records
+    IN      NS      okd4-services
+
+; name servers - A records
+okd4-services.adelerhof.eu.          IN      A       192.168.2.125
+
+; OpenShift Container Platform Cluster - A records
+okd4-bootstrap.openshift.adelerhof.eu.        IN      A      192.168.2.200
+okd4-control-plane-1.openshift.adelerhof.eu.        IN      A      192.168.2.230
+okd4-control-plane-2.openshift.adelerhof.eu.         IN      A      192.168.2.231
+okd4-control-plane-3.openshift.adelerhof.eu.         IN      A      192.168.2.232
+okd4-compute-1.openshift.adelerhof.eu.        IN      A      192.168.2.233
+okd4-compute-2.openshift.adelerhof.eu.        IN      A      192.168.2.234
+
+; OpenShift internal cluster IPs - A records
+api.openshift.adelerhof.eu.    IN    A    192.168.2.125
+api-int.openshift.adelerhof.eu.    IN    A    192.168.2.125
+*.apps.openshift.adelerhof.eu.    IN    A    192.168.2.125
+etcd-0.openshift.adelerhof.eu.    IN    A     192.168.2.230
+etcd-1.openshift.adelerhof.eu.    IN    A     192.168.2.231
+etcd-2.openshift.adelerhof.eu.    IN    A    192.168.2.232
+console-openshift-console.apps.openshift.adelerhof.eu.     IN     A     192.168.2.125
+oauth-openshift.apps.openshift.adelerhof.eu.     IN     A     192.168.2.125
+
+; OpenShift internal cluster IPs - SRV records
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-0.lab
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-1.lab
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-2.lab
+

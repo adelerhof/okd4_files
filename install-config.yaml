@@ -1,7 +1,7 @@
 apiVersion: v1
-baseDomain: home.lab
+baseDomain: adelerhof.eu
 metadata:
-  name: okd
+  name: openshift
 
 compute:
 - hyperthreading: Enabled
