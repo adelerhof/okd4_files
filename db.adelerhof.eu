@@ -20,6 +20,7 @@ okd4-control-plane-2.openshift.adelerhof.eu.         IN      A      192.168.2.23
 okd4-control-plane-3.openshift.adelerhof.eu.         IN      A      192.168.2.232
 okd4-compute-1.openshift.adelerhof.eu.        IN      A      192.168.2.233
 okd4-compute-2.openshift.adelerhof.eu.        IN      A      192.168.2.234
+okd4-compute-3.openshift.adelerhof.eu.        IN      A      192.168.2.235
 
 ; OpenShift internal cluster IPs - A records
 api.openshift.adelerhof.eu.    IN    A    192.168.2.125
@@ -32,7 +33,6 @@ console-openshift-console.apps.openshift.adelerhof.eu.     IN     A     192.168.
 oauth-openshift.apps.openshift.adelerhof.eu.     IN     A     192.168.2.125
 
 ; OpenShift internal cluster IPs - SRV records
-_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-0.adelerhof.eu
-_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-1.adelerhof.eu
-_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-2.adelerhof.eu
-
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-0.
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-1.
+_etcd-server-ssl._tcp.openshift.adelerhof.eu.    86400     IN    SRV     0    10    2380    etcd-2.
